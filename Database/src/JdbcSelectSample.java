@@ -26,7 +26,7 @@ public class JdbcSelectSample {
 				statement.execute();
 			}
 			
-			try (PreparedStatement statement = con.prepareStatement("UPDATE user  money = money + 1000 WHERE id = 3")) {
+			try (PreparedStatement statement = con.prepareStatement("UPDATE user SET money = money + 1000 WHERE id = 3")) {
 				statement.execute();
 			}
 			
